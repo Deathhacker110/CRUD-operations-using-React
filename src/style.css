@@ -1,0 +1,257 @@
+/* Styling for the form container */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 50%, #fad0c4 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+.App {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: linear-gradient( #ffefba, #ffffff);
+    border-radius: 20px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #003f7f;
+    transform: scale(0.95);
+  }
+  
+  table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 2px solid #000;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+  }
+  
+  td {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #e6f7ff;
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: #ffffff;
+  }
+  
+  td button {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  
+  td button:nth-child(1) {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  td button:nth-child(1):hover {
+    background-color: #e68900;
+  }
+  
+  td button:nth-child(2) {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  td button:nth-child(2):hover {
+    background-color: #d32f2f;
+  }
+  
+
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+input {
+  appearance: none;
+  border-radius: 0;
+}
+.container{
+  width: 500px;
+  height: 600px;
+}
+.card {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(#999, .25);
+  padding: .75rem;
+}
+
+.card-image {
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 50%;
+  background-image: url('https://assets.codepen.io/285131/coffee_1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 5%;
+  position: relative;
+}
+
+.card-heading {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  right: 10%;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #735400;
+  line-height: 1.222;
+  
+}
+
+.card-form {
+  padding: 2rem 1rem 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+  position: relative;
+  padding:15px;
+  
+}
+
+.input-label {
+  color: #8597a3;
+  position: absolute;
+  top: 1.5rem;
+  transition: .25s ease;
+}
+
+.input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee; 
+  font: inherit;
+  font-size: 1.125rem;
+  padding: .25rem 0;
+  &:focus, &:valid {
+    outline: 0;
+    border-bottom-color: #6658d3;
+    &+.input-label {
+      color: #6658d3;
+      transform: translateY(-1.5rem);
+    }
+  }
+}
+
+.action {
+  margin-top: 2rem;
+}
+
+.action-button {
+  font: inherit;
+  font-size: 1.25rem;
+  padding: 1em;
+  width: 100%;
+  font-weight: 500;
+  background-color: #6658d3;
+  border-radius: 6px;
+  color: #FFF;
+  border: 0;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.card-info {
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: .875rem;
+  color: #8597a3;
+  a {
+    display: block;
+    color: #6658d3;
+    text-decoration: none;
+  }
+}
+.error {
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.error:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.error h3 {
+  font-size: 22px;
+  color: red;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.error h1 {
+  font-size: 48px;
+  color: #e74c3c;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.error p {
+  font-size: 16px;
+  color: #777;
+  margin: 10px 0 20px;
+}
+
+.error_button {
+  background-color:#f5576c;
+}
+
+
+
+
